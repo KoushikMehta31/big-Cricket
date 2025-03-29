@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  transition: all 0.3s ease;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #4caf50;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.checkbox-container {
+  display: block;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  width: 100%;
+  background: #28ab3b;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #056209;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .form-row {
+      flex-direction: column;
+  }
+  .form-group {
+      width: 100%;
+  }
+  .container {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  h1 {
+      font-size: 24px;
+  }
+  .form-group {
+      width: 100%;
+  }
+  .register-btn {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+  }
+  h1 {
+      font-size: 20px;
+  }
+  input, select, .register-btn {
+      font-size: 14px;
+      padding: 8px;
+  }
+}

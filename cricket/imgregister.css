@@ -1,0 +1,31 @@
+
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, red, blue 50%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

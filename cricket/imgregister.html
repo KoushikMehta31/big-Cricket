@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Close Button Outside</title>
+    <link rel="stylesheet" href="imgregister.css">
+</head>
+<body>
+
+    <div class="container" id="imageBox">
+        <a href="trials.html">
+            <button class="close-btn" onclick="closeImage()">X</button>
+        </a>
+        <div class="image-container">
+            <a href="register.html">
+                <img src="images/POP_UP_BANNER_REGISTER_NOW_FOR_SEASON_2_500_X500_op02_1da828c5f7.jpg" alt="Ad Image" width="400">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function closeImage() {
+            document.getElementById("imageBox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
